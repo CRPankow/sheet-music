@@ -23,13 +23,19 @@ chant = \relative c' {
   f4 g a2 \break
   a4 g f g( f) f2 \break \finalis
   %New Line I guess
-  c
+  R1
   \finalis
+
 
 
   % \divisioMinima
   %g4 b a2 f2 \divisioMaior
   %g4( f) f( g) a2 \finalis
+}
+
+reading = \lyricmode {
+  A read -- ing_from_the La -- men -- ta -- tions
+  of_Jeremi -- ah the Pro -- phet.  
 }
 
 heth = \lyricmode {
@@ -99,14 +105,13 @@ kaph = \lyricmode {
     \new Lyrics = "one" \lyricsto melody \kaph
   >>
     \layout {
-    \addlyrics {
-       \once \override LyricText.self-alignment-X = #LEFT
-     }
+    \once \override LyricText.self-alignment-X = #LEFT
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
       \hide Stem
+      \RemoveEmptyStaves
     }
     \context {
       \Voice
