@@ -69,7 +69,7 @@ tet = \lyricmode {
     he_has_broken_and shat -- ered their bars.
 
   Her king and_her_princes_are_among_the_gentiles,
-    theres_is no_in -- struc -- tion,
+    there_is no_in -- struc -- tion,
 
   fur -- ther -- more_her_prophets_cannot_find
    any_vi -- sion from the __ Lord. 
