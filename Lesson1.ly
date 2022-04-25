@@ -26,8 +26,6 @@ chant = \relative c' {
   R1
   \finalis
 
-
-
   % \divisioMinima
   %g4 b a2 f2 \divisioMaior
   %g4( f) f( g) a2 \finalis
@@ -98,6 +96,13 @@ kaph = \lyricmode {
 
 \score {
   \new Staff <<
+    \new Voice = "melody" \chant
+    \new Lyrics = "one" \lyricsto melody \heth
+    \new Lyrics = "one" \lyricsto melody \tet
+    \new Lyrics = "one" \lyricsto melody \yod
+    \new Lyrics = "one" \lyricsto melody \kaph
+  >>
+  \new Staffs <<
     \new Voice = "melody" \chant
     \new Lyrics = "one" \lyricsto melody \heth
     \new Lyrics = "one" \lyricsto melody \tet
