@@ -106,7 +106,9 @@ kaph = \lyricmode {
 }
 
 \score {
-  \new Staff <<
+  \new Staff \with {
+  \override StaffSymbol.thickness = #0.5
+  } <<
     \new Voice = "melody" \chant
     \new Lyrics = "one" \lyricsto melody \heth
     \new Lyrics = "one" \lyricsto melody \tet
