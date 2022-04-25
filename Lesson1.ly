@@ -2,11 +2,10 @@
 
 \paper {
  markup-system-spacing = 
-  #' ((basic-distance . 9)
-     (minimum-distance . 7)
-     (padding . 2)
+  #' ((basic-distance . 6)
+     (minimum-distance . 5)
+     (padding . 0)
      (stretchability . 5))
-% markup-system-spacing = #20
   system-system-spacing = 
   #'  ((basic-distance . 9)
      (minimum-distance . 7)
@@ -116,9 +115,9 @@ kaph = \lyricmode {
   >>
   \layout {
     \once \override LyricText.self-alignment-X = #LEFT
-    \override LyricText.font-size = #0
+    \override LyricText.font-size = #-0.25
     \override VerticalAxisGroup.
-       nonstaff-relatedstaff-spacing.padding = #2
+       nonstaff-relatedstaff-spacing.padding = #1.5
     
     \context {
       \Staff
