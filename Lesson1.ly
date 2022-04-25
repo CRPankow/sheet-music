@@ -1,6 +1,18 @@
 
 
-
+\paper {
+ markup-system-spacing = 
+  #' ((basic-distance . 9)
+     (minimum-distance . 7)
+     (padding . 2)
+     (stretchability . 5))
+% markup-system-spacing = #20
+  system-system-spacing = 
+  #'  ((basic-distance . 9)
+     (minimum-distance . 7)
+     (padding . 3)
+     (stretchability . 5))
+}
 
 \header {
   title = "Lesson I"
@@ -106,7 +118,7 @@ kaph = \lyricmode {
     \once \override LyricText.self-alignment-X = #LEFT
     \override LyricText.font-size = #0
     \override VerticalAxisGroup.
-       nonstaff-relatedstaff-spacing.padding = #3
+       nonstaff-relatedstaff-spacing.padding = #2
     
     \context {
       \Staff
