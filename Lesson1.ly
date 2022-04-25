@@ -119,21 +119,24 @@ kaph = \lyricmode {
     \override VerticalAxisGroup.
        nonstaff-relatedstaff-spacing.padding = #1.5
     
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-      \RemoveEmptyStaves
-    }
-    \context {
-      \Voice
-      \override Stem.length = #0
-    }
-    \context {
-      \Score
-       barAlways = ##t
+      \context {
+        \Staff
+        \remove "Time_signature_engraver"
+        \remove "Bar_engraver"
+        \hide Stem
+        \RemoveEmptyStaves
+      }
+      \context {
+        \Voice
+        \override Stem.length = #0
+      }
+      \context {
+        \Score
+        barAlways = ##t
       
-    }
-  }
+      }
+   }
+
+   \midi {}
+   
 }
