@@ -51,8 +51,8 @@ heth = \lyricmode {
 }
 
 tet = \lyricmode {
-  A read -- ing_from_the La -- men -- ta -- tions
-  of_Jeremi -- ah the Pro -- phet.  Tet __
+  \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 
+  Tet __
 
   Her gates have_sunk_into_the_ground;
     he_has_broken_and shat -- ered their bars.
@@ -65,8 +65,8 @@ tet = \lyricmode {
 }
 
 yod = \lyricmode {
- A read -- ing_from_the La -- men -- ta -- tions
-  of_Jeremi -- ah the Pro -- phet.  Yod __
+  \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 
+  Yod __
 
   Mute, they sit_on_the_ground
     the_elders_of_the daught -- er_of Zi -- on;
@@ -79,8 +79,8 @@ yod = \lyricmode {
 }
 
 kaph = \lyricmode {
-  A read -- ing_from_the La -- men -- ta -- tions
-  of_Jeremi -- ah the Pro -- phet.  Kaph __
+  \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 \skip1 
+  Kaph __
 
   My eyes are_worn_out_with_weeping,
     my_inmost be -- ing_is_in fer -- ment,
@@ -96,13 +96,6 @@ kaph = \lyricmode {
 
 \score {
   \new Staff <<
-    \new Voice = "melody" \chant
-    \new Lyrics = "one" \lyricsto melody \heth
-    \new Lyrics = "one" \lyricsto melody \tet
-    \new Lyrics = "one" \lyricsto melody \yod
-    \new Lyrics = "one" \lyricsto melody \kaph
-  >>
-  \new Staffs <<
     \new Voice = "melody" \chant
     \new Lyrics = "one" \lyricsto melody \heth
     \new Lyrics = "one" \lyricsto melody \tet
