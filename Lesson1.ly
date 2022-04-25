@@ -102,8 +102,12 @@ kaph = \lyricmode {
     \new Lyrics = "one" \lyricsto melody \yod
     \new Lyrics = "one" \lyricsto melody \kaph
   >>
-    \layout {
+  \layout {
     \once \override LyricText.self-alignment-X = #LEFT
+    \override LyricText.font-size = #0
+    \override VerticalAxisGroup.
+       nonstaff-relatedstaff-spacing.padding = #3
+    
     \context {
       \Staff
       \remove "Time_signature_engraver"
